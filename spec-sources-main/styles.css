@@ -1,0 +1,99 @@
+body{
+    background-color:#f5f5f5;
+    font-family:'Poppins';
+}
+
+.heading{
+    text-align:center;
+    color:#36476D;
+    padding:1rem;
+    margin:5px;
+}
+
+.nav{
+    /*every div is by default display block*/
+    display:flex;
+    align-items: center;
+    background-color:#AFD7FA;
+    border-radius:15px;
+    padding: 2rem 2rem;
+    margin: 1rem 1rem;
+    margin:35px;
+}
+
+#add{
+    background-color:#56C854;
+    color:#ffffff;
+    font-family:'Poppins';
+    border-radius:10px;
+    border:none;
+    margin:auto;
+    padding:1rem 1rem;
+    width:10%;
+}
+
+.nav-text{
+    margin:auto;
+    color:#ffffff;
+}
+
+
+.flex-container{
+    display:flex;
+    flex-direction:column;
+    padding:2rem 2rem;
+    margin: 1rem 0rem;
+}
+
+.person{
+    display:flex;
+    background-color:#ffffff;
+    margin:1rem 0rem;
+    border-radius:20px;
+    padding: 1rem 1rem;
+    text-align:left;
+}
+
+
+#entry[type = text]{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    padding: 1rem 1rem;
+    width: 30%;
+}
+  
+.number{
+    color:#36476D;
+    font-size:1.5rem;
+    font-weight: 600;
+    margin: auto 1rem;
+}
+
+.name{
+    color:#36476D;
+    font-size:1.5rem;
+    font-weight: 600;
+    margin: auto 1rem;
+    flex: 1;
+}
+
+.email{
+    color:#828EA6;
+    font-size:1.2rem;
+    line-height: 1rem;
+    margin: auto 1rem;
+    flex: 1;
+}
+
+#delete{
+    background-color:#FF7676;
+    color:#ffffff;
+    font-family:'Poppins';
+    border-radius:10px;
+    border:none;
+    margin:15px;
+    padding:5px;
+    width:80px;
+}
