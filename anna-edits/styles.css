@@ -13,11 +13,8 @@ body{
 .nav{
     /*every div is by default display block*/
     display:flex;
-    align-items: center;
     background-color:#AFD7FA;
     border-radius:15px;
-    padding: 2rem 2rem;
-    margin: 1rem 1rem;
     margin:35px;
 }
 
@@ -27,16 +24,25 @@ body{
     font-family:'Poppins';
     border-radius:10px;
     border:none;
-    margin:auto;
-    padding:1rem 1rem;
-    width:10%;
+    margin:15px;
+    padding:5px;
+    width:80px;
 }
 
 .nav-text{
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
     color:#ffffff;
 }
 
+/* .entry{
+    width:10px;
+    height:5px;
+    margin-left:auto;
+    margin-right:auto;
+} */
 
 .flex-container{
     display:flex;
@@ -54,16 +60,6 @@ body{
     text-align:left;
 }
 
-
-#entry[type = text]{
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
-    padding: 1rem 1rem;
-    width: 30%;
-}
-  
 .number{
     color:#36476D;
     font-size:1.5rem;
