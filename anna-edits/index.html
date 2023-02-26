@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import spec_logo from './logo.png';
-import Header from './Components/Header';
-import NavBar from './Components/NavBar';
-
-function App() {
-  //everything inside this return is pure html, a copy-paste from original index.html
-  return (
-    <div className="App">
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+  </style>
+  <script src=""></script>
+  <body>
     <div>
       <img
-        src={spec_logo}
+        src="./logo.png"
         alt="Columbia Spectator logo"
         width="263"
         height="55"
       />
     </div>
 
-    <Header/>
-    <NavBar/>
-  
+    <h1 class="heading">Spectator's Sources</h1>
+    <div class="nav">
+      <p class="nav-text">Source Name:</p>
+      <div class="entry"></div>
+      <p class="nav-text">Source Email:</p>
+      <div class="entry"></div>
+      <button id="add" onclick>ADD</button>
+    </div>
 
     <div class="flex-container">
       <div class="person">
@@ -41,8 +47,5 @@ function App() {
         <button id="delete" onclick>DELETE</button>
       </div>
     </div>
-    </div>
-  );
-  }
-
-export default App;
+  </body>
+</html>
