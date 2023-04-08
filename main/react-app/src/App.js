@@ -17,7 +17,7 @@ function App() {
   //peopleList is the variable, setPeopleList will be the method 
   //useState will be fed initial state of your variables
   const [peopleList,setPeopleList] = useState(initialList);
-
+  
   function handleDelete(peopleIndex){
     const updatedList = peopleList.slice(0,peopleIndex).concat(peopleList.slice(peopleIndex+1));
     setPeopleList(updatedList);
@@ -26,7 +26,7 @@ function App() {
   function handleAdd(sourceName,sourceEmail){
     //keeping original list and adding new item to it
     const updatedList=[...peopleList,{name:sourceName,email:sourceEmail}]
-    //peopleList.concat([{name:sourceName,email:sourceEmail}])
+    //const updatedList = peopleList.concat([{name:sourceName,email:sourceEmail}])
     setPeopleList(updatedList);
   }
   //everything inside this return is pure html, a copy-paste from original index.html
@@ -44,7 +44,7 @@ function App() {
     <Header/>
 
     {/* NavBar Component */}
-    <NavBar handleAdd={handleAdd}></NavBar>
+    <NavBar peopleList={peopleList} handleAdd={handleAdd}></NavBar>
   
     {/* People Container Component
     //giving peopleList access to handleDelete*/}
