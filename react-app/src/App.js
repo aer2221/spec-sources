@@ -25,13 +25,14 @@ function App() {
 
   function handleAdd(sourceName,sourceEmail){
     //keeping original list and adding new item to it
-    const updatedList=[...peopleList,{name:sourceName,email:sourceEmail}]
+    const updatedList=[...peopleList,{name:sourceName,email:sourceEmail}];
+    console.log(updatedList);
     //const updatedList = peopleList.concat([{name:sourceName,email:sourceEmail}])
     setPeopleList(updatedList);
   }
   //everything inside this return is pure html, a copy-paste from original index.html
   return (
-    <div className="App">
+    <div class="App">
     <div>
       <img
         src={spec_logo}
@@ -54,30 +55,3 @@ function App() {
   }
 
 export default App;
-
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
